@@ -867,21 +867,15 @@
         }
 
         function style_project_htmlrailway_station_spb_10_0() {
-            return {
-                pane: 'pane_project_htmlrailway_station_spb_10',
-                radius: 7.2,
-                opacity: 1,
-                color: 'rgba(149,37,43,1.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 2.0,
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(255,255,255,1.0)',
-                interactive: true,
-            }
-        }
+           return {
+			   pane: 'pane_project_htmlrailway_station_spb_10',
+			   icon: L.icon({
+				   iconUrl: 'markers/project_htmlrailway_station_spb_10.svg',
+				   iconSize: [14, 14],
+				   iconAnchor: [7, 7]
+			   }),
+			   interactive: true,
+		   }
         function style_project_htmlrailway_station_spb_10_1() {
             return {
                 pane: 'pane_project_htmlrailway_station_spb_10',
@@ -1093,54 +1087,35 @@
             switch(String(feature.properties['Тип автостоянки'])) {
                 case 'Городская':
                     return {
-                pane: 'pane_project_htmlparking_space_12',
-                shape: 'square',
-                radius: 6.0,
-                opacity: 1,
-                color: 'rgba(76,101,174,1.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 2.0,
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(76,101,174,1.0)',
-                interactive: true,
-            }
-                    break;
+    pane: 'pane_project_htmlparking_space_12',
+    icon: L.icon({
+        iconUrl: 'markers/project_htmlparking_space_12.svg',
+        iconSize: [14, 14],
+        iconAnchor: [7, 7]
+    }),
+    interactive: true,
+}
                 case 'Зона платной парковки':
                     return {
-                pane: 'pane_project_htmlparking_space_12',
-                shape: 'square',
-                radius: 6.0,
-                opacity: 1,
-                color: 'rgba(76,101,174,1.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 2.0,
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(76,101,174,1.0)',
-                interactive: true,
-            }
+    pane: 'pane_project_htmlparking_space_12',
+    icon: L.icon({
+        iconUrl: 'markers/project_htmlparking_space_12.svg',
+        iconSize: [14, 14],
+        iconAnchor: [7, 7]
+    }),
+    interactive: true,
+}
                     break;
                 case 'Перехватывающая':
                     return {
-                pane: 'pane_project_htmlparking_space_12',
-                shape: 'square',
-                radius: 6.0,
-                opacity: 1,
-                color: 'rgba(196,55,63,1.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 2.0,
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(196,55,63,1.0)',
-                interactive: true,
-            }
+    pane: 'pane_project_htmlparking_space_12',
+    icon: L.icon({
+        iconUrl: 'markers/project_htmlparking_space_12.svg',
+        iconSize: [14, 14],
+        iconAnchor: [7, 7]
+    }),
+    interactive: true,
+}
                     break;
             }
         }
